@@ -62,13 +62,15 @@
   max-width: 360px;
 
   @media /*(min-width: $tablet-min-width) and */(max-width: $tablet-max-width) {
-    max-width: 404px;
-    min-width: 100%;
+    max-width: 506px;
+    min-width: 406px;
     flex-basis: auto;
   }
 
   @media (max-width: $mobile-max-width) {
     padding: 0 10px;
+    max-width: 100%;
+    min-width: 100%;
   }
 }
 
