@@ -1,0 +1,76 @@
+.mobile-nav {
+  display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.mobile-nav__toggler {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav__toggler > span {
+  position: relative;
+}
+
+.mobile-nav__toggler > span::before,
+.mobile-nav__toggler > span::after,
+.mobile-nav__toggler > span {
+  width: 22px;
+  height: 1px;
+  background-color: $textColor;
+}
+
+.mobile-nav__toggler > span::before,
+.mobile-nav__toggler > span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+}
+
+.mobile-nav__toggler > span::after {
+  top: 7px;
+}
+
+.mobile-nav__toggler > span::before {
+  bottom: 7px;
+}
+
+.nojs .mobile-nav {
+  @media (max-width: $tablet-max-width) {
+    justify-content: flex-end;
+  }
+}
+
+.nojs .mobile-nav__toggler {
+  background-color: $bg;
+  transition: background-color 0s 0.3s;
+}
+
+.nojs .mobile-nav__toggler > span::before,
+.nojs .mobile-nav__toggler > span::after {
+  width: 30px;
+  background-color: rgba(44, 46, 63, 0.5);
+  top: 0;
+}
+
+.nojs .mobile-nav__toggler > span {
+  background-color: transparent;
+}
+
+.nojs .mobile-nav__toggler > span::after {
+  transform: rotate(45deg);
+}
+
+.nojs .mobile-nav__toggler > span::before {
+  transform: rotate(-45deg);
+}

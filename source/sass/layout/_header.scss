@@ -1,0 +1,27 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.page-header__logo {
+  display: none;
+  margin: 25px auto auto 22px;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+  }
+}
+
+.nojs .page-header__logo {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}

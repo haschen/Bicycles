@@ -1,11 +1,17 @@
-:root {
-  --prymary: #0ad9c6;
-  --textColor: #000000;
-  --textColorInverse: #ffffff;
-  --bgBlack: #131314;
-  --bgGrey: #e5e5e5;
-  --bg: #ffffff;
+$primary: #0ad9c6;
+$textColor: #000000;
+$textColorInverse: #ffffff;
+$bgBlack: #131314;
+$bgGrey: #e5e5e5;
+$bg: #ffffff;
 
-  --fontFamyliDefault: "Open Sans", "Arial", sans-serif;
-  --fontFamyliOption: "Overpass", "Arial", sans-serif;
-}
+$fontFamyliDefault: "Open Sans", "Arial", sans-serif;
+$fontFamyliOption: "Overpass", "Arial", sans-serif;
+
+$mobile-min-width: 320px;
+$mobile-max-width: 767px;
+
+$tablet-min-width: 768px;
+$tablet-max-width: 1023px;
+
+$desktop-min-width: 1024px;

@@ -1,5 +1,17 @@
 @import "./config/variables";
 @import "./config/fonts";
+@import "./base/reset";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./blocks/intro";
+@import "./blocks/main-nav";
+@import "./blocks/mobile-nav";
+@import "./blocks/_request-form";
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /*min-width: 960px;
+  max-width: 1200px;*/
+}
