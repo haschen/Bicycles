@@ -2,40 +2,40 @@
   font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
-
   font-display: swap;
-  src: local("Open Sans");
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
-
   font-display: swap;
-  src: local("Open Sans");
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  src: local("Open Sans"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-weight: 600;
   font-family: "Open Sans";
   font-style: normal;
-
   font-display: swap;
-  src: local("Open Sans");
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  src: local("Open Sans"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Overpass";
   font-style: normal;
-
   font-display: swap;
-  src: local("Overpass");
-  src: url("../fonts/overpass.woff2") format("woff2"), url("../fonts/overpass.woff") format("woff");
+  src: local("Overpass"),
+    url("../fonts/overpass.woff2") format("woff2"),
+    url("../fonts/overpass.woff") format("woff");
 }
 
 
@@ -43,8 +43,8 @@
   font-weight: 700;
   font-family: "Overpass";
   font-style: normal;
-
   font-display: swap;
-  src: local("Overpass");
-  src: url("../fonts/overpassbold.woff2") format("woff2"), url("../fonts/overpassbold.woff") format("woff");
+  src: local("Overpass"),
+    url("../fonts/overpassbold.woff2") format("woff2"),
+    url("../fonts/overpassbold.woff") format("woff");
 }

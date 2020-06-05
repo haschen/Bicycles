@@ -1,0 +1,143 @@
+.video {
+  position: relative;
+  padding-top: 120px;
+  background-color: $bgBlack;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $bg;
+    height: 100px;
+    z-index: -1;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 65px;
+
+    &::after {
+      height: 85px;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 79px;
+
+    &::after {
+      height: 48px;
+    }
+  }
+}
+
+.video__head {
+  margin: 0 auto;
+  width: 29%;
+  min-width: 355px;
+  text-align: center;
+  font-family: $fontFamyliDefault;
+  color: #ffffff;
+
+  @media (max-width: $tablet-max-width) {
+    width: 56%;
+    min-width: auto;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 91%;
+  }
+}
+
+.video__title {
+  margin: 0 0 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 0 14px;
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
+
+.video__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.video__player {
+  position: relative;
+  width: 64.514%;
+  height: 0;
+  margin: 58px auto 0;
+  padding-bottom: 36.181%;
+  overflow: hidden;
+
+  @media (max-width: $tablet-max-width) {
+    width: 65.495%;
+    margin: 40px auto 0;
+    padding-bottom: 36.72%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 90%;
+    margin: 54px auto 0;
+    padding-bottom: 50.315%;
+  }
+}
+
+.video__player iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.video__button {
+  display: block;
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 20px;
+    top: 35%;
+    right: 6%;
+    border: 9px solid transparent;
+    border-left: 13px solid #000000;
+    border-right: none;
+  }
+
+  @media (max-width: $tablet-max-width) and (min-width: $tablet-min-width) {
+    height: 90px;
+    width: 90px;
+
+    &::before {
+      width: 16px;
+      top: 36%;
+      right: 6%;
+      border: 12px solid transparent;
+      border-left: 17px solid #000000;
+    }
+  }
+}

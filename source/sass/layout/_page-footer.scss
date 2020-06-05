@@ -1,0 +1,10 @@
+.page-footer {
+  display: flex;
+  justify-content: center;
+  padding: 150px 0 98px;
+  background-color: $bg;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 68px 0 40px;
+  }
+}

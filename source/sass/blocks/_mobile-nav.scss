@@ -8,40 +8,43 @@
   }
 }
 
-.mobile-nav__toggler {
+.mobile-nav__toggler-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
+  padding-left: 0;
+  padding-right: 0;
   background-color: $primary;
   border: none;
   cursor: pointer;
 }
 
-.mobile-nav__toggler > span {
+.mobile-nav__toggler-icon {
   position: relative;
 }
 
-.mobile-nav__toggler > span::before,
-.mobile-nav__toggler > span::after,
-.mobile-nav__toggler > span {
+.mobile-nav__toggler-icon::before,
+.mobile-nav__toggler-icon::after,
+.mobile-nav__toggler-icon {
   width: 22px;
   height: 1px;
   background-color: $textColor;
 }
 
-.mobile-nav__toggler > span::before,
-.mobile-nav__toggler > span::after {
+.mobile-nav__toggler-icon::before,
+.mobile-nav__toggler-icon::after {
   content: "";
   position: absolute;
   right: 0;
 }
 
-.mobile-nav__toggler > span::after {
+.mobile-nav__toggler-icon::after {
   top: 7px;
 }
 
-.mobile-nav__toggler > span::before {
+.mobile-nav__toggler-icon::before {
   bottom: 7px;
 }
 
@@ -51,26 +54,27 @@
   }
 }
 
-.nojs .mobile-nav__toggler {
+.nojs .mobile-nav__toggler-button {
   background-color: $bg;
   transition: background-color 0s 0.3s;
 }
 
-.nojs .mobile-nav__toggler > span::before,
-.nojs .mobile-nav__toggler > span::after {
+.nojs .mobile-nav__toggler-icon::before,
+.nojs .mobile-nav__toggler-icon::after {
   width: 30px;
-  background-color: rgba(44, 46, 63, 0.5);
   top: 0;
+  right: -4px;
+  background-color: rgba(44, 46, 63, 0.5);
 }
 
-.nojs .mobile-nav__toggler > span {
+.nojs .mobile-nav__toggler-icon {
   background-color: transparent;
 }
 
-.nojs .mobile-nav__toggler > span::after {
+.nojs .mobile-nav__toggler-icon::after {
   transform: rotate(45deg);
 }
 
-.nojs .mobile-nav__toggler > span::before {
+.nojs .mobile-nav__toggler-icon::before {
   transform: rotate(-45deg);
 }

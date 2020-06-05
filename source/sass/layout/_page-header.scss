@@ -1,0 +1,27 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.page-header__logo {
+  display: none;
+  margin: 24px 0 0 19px;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+  }
+}
+
+.nojs .page-header {
+  @media (max-width: $tablet-max-width) {
+    position: relative;
+  }
+}
+
+.nojs .page-header__logo {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}

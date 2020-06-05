@@ -1,12 +1,14 @@
+@import "../../node_modules/normalize.css/normalize";
 @import "./config/variables";
 @import "./config/fonts";
-@import "./base/reset";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./layout/page-header";
+@import "./layout/page-footer";
+//@import "./layout/page-section";
 @import "./blocks/intro";
 @import "./blocks/main-nav";
 @import "./blocks/mobile-nav";
 @import "./blocks/request-form";
 @import "./blocks/about";
 @import "./blocks/types";
+@import "./blocks/video";
 @import "./blocks/contacts";
