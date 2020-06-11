@@ -1,9 +1,9 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "./config/variables";
 @import "./config/fonts";
+@import "base";
 @import "./layout/page-header";
 @import "./layout/page-footer";
-//@import "./layout/page-section";
 @import "./blocks/intro";
 @import "./blocks/main-nav";
 @import "./blocks/mobile-nav";

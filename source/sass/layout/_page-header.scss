@@ -1,16 +1,14 @@
 .page-header {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.page-header__logo {
-  display: none;
-  margin: 24px 0 0 19px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
   @media (max-width: $tablet-max-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 2;
   }
 }
 
@@ -20,8 +18,15 @@
   }
 }
 
-.nojs .page-header__logo {
+.page-header__logo {
+  display: none;
+
   @media (max-width: $tablet-max-width) {
-    display: none;
+    display: block;
+    margin: 25px 0 0 23px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin: 25px 0 0 17px;
   }
 }

@@ -1,6 +1,6 @@
 .intro {
   padding-top: 318px;
-  padding-bottom: 218px;
+  padding-bottom: 240px;
   font-family: $fontFamyliDefault;
   color: $textColorInverse;
   background-image: url("../img/bg-head-desktop@1x.jpg");
@@ -37,6 +37,7 @@
 }
 
 .intro__inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -55,11 +56,13 @@
 
   @media (max-width: $tablet-max-width) {
     width: 60%;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-max-width) {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 70px;
   }
 }
 
@@ -73,19 +76,13 @@
     background-color: $bg;
     overflow: hidden;
   }
-
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    margin-top: 63px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    margin-top: 53px;
-  }
 }
 
 .intro__logo {
   @media (max-width: $tablet-max-width) {
     display: none;
+    top: -110px;
+    left: 23px;
   }
 }
 
@@ -100,9 +97,14 @@
     font-size: 30px;
     line-height: 42px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .intro__slogan {
+  margin: 0;
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;

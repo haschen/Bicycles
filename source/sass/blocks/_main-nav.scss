@@ -1,10 +1,10 @@
 .main-nav {
-  /*display: flex;
-  justify-content: center;
-  ;*/
-
   @media (max-width: $tablet-max-width) {
+    position: absolute;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 }
 
@@ -46,6 +46,16 @@
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    color: #48494d;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 400;
+    background-color: #f6f6f6;
+    padding-left: 16px;
+    opacity: 1;
 
     &::after {
       content: "";
@@ -61,26 +71,96 @@
   }
 }
 
-.nojs .main-nav__list {
+.nojs .main-nav {
+  position: relative;
+}
+
+.nojs .main-nav,
+.main-nav--open {
+  background-color: $bg;
+}
+
+.nojs .main-nav__list,
+.main-nav--open .main-nav__list {
   @media (max-width: $tablet-max-width) {
     display: block;
     margin: 0;
-    margin-top: -51px;
-    padding: 72px 0  20px 0;
+    padding: 21px 0  20px 0;
+    transition: display 0.3s 1.3s;
   }
 }
 
-.nojs .main-nav__item a {
+.main-nav__toggler-button {
+  display: none;
+
   @media (max-width: $tablet-max-width) {
-    display: block;
-    position: relative;
-    margin-top: 30px;
-    color: #48494d;
-    font-size: 20px;
-    line-height: 60px;
-    font-weight: 400;
-    background-color: #f6f6f6;
-    padding-left: 16px;
-    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $primary;
+    border: none;
+    cursor: pointer;
   }
+}
+
+.main-nav__toggler-icon {
+  position: relative;
+}
+
+.main-nav__toggler-icon::before,
+.main-nav__toggler-icon::after,
+.main-nav__toggler-icon {
+  width: 22px;
+  height: 1px;
+  background-color: $textColor;
+}
+
+.main-nav__toggler-icon::before,
+.main-nav__toggler-icon::after {
+  content: "";
+  position: absolute;
+  right: 0;
+}
+
+.main-nav__toggler-icon::after {
+  top: 7px;
+}
+
+.main-nav__toggler-icon::before {
+  bottom: 7px;
+}
+
+.nojs .main-nav__toggler-button,
+.main-nav--open .main-nav__toggler-button {
+  background-color: $bg;
+  //transition: all 0s 0.3s;
+}
+
+.nojs .main-nav__toggler-icon::before,
+.nojs .main-nav__toggler-icon::after,
+.main-nav--open .main-nav__toggler-icon::after,
+.main-nav--open .main-nav__toggler-icon::before {
+  width: 30px;
+  top: 0;
+  right: -4px;
+  background-color: rgba(44, 46, 63, 0.5);
+}
+
+.nojs .main-nav__toggler-icon,
+.main-nav--open .main-nav__toggler-icon {
+  background-color: transparent;
+}
+
+.nojs .main-nav__toggler-icon::after,
+.main-nav--open .main-nav__toggler-icon::after {
+  transform: rotate(45deg);
+}
+
+.nojs .main-nav__toggler-icon::before,
+.main-nav--open .main-nav__toggler-icon::before {
+  transform: rotate(-45deg);
 }

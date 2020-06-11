@@ -1,6 +1,6 @@
 .video {
   position: relative;
-  padding-top: 120px;
+  padding-top: 121px;
   background-color: $bgBlack;
   z-index: 1;
 
@@ -12,12 +12,12 @@
     right: 0;
     width: 100%;
     background-color: $bg;
-    height: 100px;
+    height: 97px;
     z-index: -1;
   }
 
   @media (max-width: $tablet-max-width) {
-    padding-top: 65px;
+    padding-top: 63px;
 
     &::after {
       height: 85px;
@@ -77,9 +77,18 @@
   position: relative;
   width: 64.514%;
   height: 0;
-  margin: 58px auto 0;
+  margin: 55px auto 0;
   padding-bottom: 36.181%;
   overflow: hidden;
+  background-image: url("/img/video-cover@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/video-cover@2x.jpg");
+  }
 
   @media (max-width: $tablet-max-width) {
     width: 65.495%;
@@ -111,9 +120,11 @@
   right: 50%;
   transform: translate(50%, -50%);
   font-size: 0;
-  border: none;
+  border: 4px solid $primary;
   border-radius: 100%;
   background-color: $primary;
+  cursor: pointer;
+  outline: none;
 
   &::before {
     content: "";
@@ -121,11 +132,19 @@
     display: block;
     height: 0;
     width: 20px;
-    top: 35%;
-    right: 6%;
+    top: 32%;
+    right: 0;
     border: 9px solid transparent;
     border-left: 13px solid #000000;
     border-right: none;
+  }
+
+  &:hover {
+    background-color: $bg;
+  }
+
+  &:active {
+    background-color: $bgGrey;
   }
 
   @media (max-width: $tablet-max-width) and (min-width: $tablet-min-width) {
