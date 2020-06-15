@@ -52,11 +52,6 @@
 
 
   //видео
-  var hide = function(element) {
-    element.classList.add("visually-hidden");
-  }
-
-
   var createYTPlayer = function(){
     var tag = document.createElement("script");
     tag.src = "//www.youtube.com/iframe_api";

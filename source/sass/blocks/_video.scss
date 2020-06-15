@@ -80,14 +80,14 @@
   margin: 55px auto 0;
   padding-bottom: 36.181%;
   overflow: hidden;
-  background-image: url("/img/video-cover@1x.jpg");
+  background-image: url("../img/video-cover@1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("/img/video-cover@2x.jpg");
+    background-image: url("../img/video-cover@2x.jpg");
   }
 
   @media (max-width: $tablet-max-width) {
