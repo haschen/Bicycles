@@ -75,9 +75,16 @@
   position: relative;
 }
 
+.main-nav--open {
+  min-height: 100vh;
+  align-content: flex-start;
+}
+
 .nojs .main-nav,
 .main-nav--open {
-  background-color: $bg;
+  @media (max-width: $tablet-max-width) {
+    background-color: $bg;
+  }
 }
 
 .nojs .main-nav__list,
@@ -137,7 +144,6 @@
 .nojs .main-nav__toggler-button,
 .main-nav--open .main-nav__toggler-button {
   background-color: $bg;
-  //transition: all 0s 0.3s;
 }
 
 .nojs .main-nav__toggler-icon::before,

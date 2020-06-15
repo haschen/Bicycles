@@ -112,10 +112,9 @@
 }
 
 .video__button {
-  display: block;
   position: absolute;
-  height: 65px;
-  width: 65px;
+  height: 57px;
+  width: 57px;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
@@ -148,13 +147,13 @@
   }
 
   @media (max-width: $tablet-max-width) and (min-width: $tablet-min-width) {
-    height: 90px;
-    width: 90px;
+    height: 82px;
+    width: 82px;
 
     &::before {
       width: 16px;
       top: 36%;
-      right: 6%;
+      right: 1%;
       border: 12px solid transparent;
       border-left: 17px solid #000000;
     }

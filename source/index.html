@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
   <header class="page-header">
-    <a href="" class="page-header__logo">
+    <a href="#navtop" class="page-header__logo">
       <svg width="68" height="21" fill="#0AD9C6" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.364 0v20.046H10.07V5.822L8.973 7.207 6.825 9.975l-.095.095-.144-.095L4.44 7.207 3.34 5.775v14.27H0V0h3.34l3.39 4.295L10.07 0h3.294zM8.304 10.07l-.095-.095.095.095z"/>
         <path d="M8.448 9.975l-.096.095h-.047l.143-.095zM38.21 5.615l-9.128 6.701 2.113 2.878 9.127-6.701-2.113-2.878z"/>
@@ -19,31 +19,30 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggler-button  main-nav__toggler-button--open" type="button">
+      <button class="main-nav__toggler-button  main-nav__toggler-button--open" type="button" aria-label="Меню">
           <span class="main-nav__toggler-icon"></span>
       </button>
 
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#navabout">О нас</a>
+          <a  class="main-nav__link" href="#navabout">О нас</a>
         </li>
         <li class="main-nav__item">
-          <a href="#navtypes">Виды велосипедов</a>
+          <a  class="main-nav__link" href="#navtypes">Виды велосипедов</a>
         </li>
         <li class="main-nav__item">
-          <a href="#navvideo">Видео про велосипеды</a>
+          <a  class="main-nav__link" href="#navvideo">Видео про велосипеды</a>
         </li>
         <li class="main-nav__item">
-          <a href="#navcontacts">Контакты</a>
+          <a  class="main-nav__link" href="#navcontacts">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <section class="intro"  id="#navtop">
+    <section class="intro" id="navtop">
       <div class="intro__inner">
-
         <div class="intro__left">
           <div class="intro__logo">
             <svg width="68" height="21" fill="#0AD9C6" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +56,7 @@
           <p class="intro__slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
         <div class="intro__right">
-          <form class="request-form" action="">
+          <form class="request-form" action="/">
             <p class="request-form__caption">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <div class="request-form__content">
               <input type="text" placeholder="Введите Ваше Имя" required>
@@ -66,11 +65,10 @@
             </div>
           </form>
         </div>
-
       </div>
     </section>
-    <section class="about" id="navabout">
 
+    <section class="about" id="navabout">
       <h2 class="about__title">Несколько фактов о нас</h2>
       <div class="about__inner">
         <div class="about__item">
@@ -89,38 +87,33 @@
           <span class="about__count">04</span>
           <p class="about__text">Профессиональные консультации!</p>
         </div>
-
       </div>
     </section>
 
     <section class="types" id="navtypes">
       <h2 class="types__title">Виды велосипедов</h2>
-
       <div class="types__inner">
-
         <figure class="types__item  types__item--decor-left">
           <div class="types__img-wrap">
           <img class="types__img" src="./img/bicycle-type-road-desktop@1x.jpg" alt="Дорожный велосипед" width="342" height="513">
-
           </div>
           <figcaption class="types__caption">Дорожный велосипед</figcaption>
         </figure>
         <figure class="types__item  types__item--big  types__item--decor-corners">
           <div class="types__img-wrap">
             <img class="types__img" src="./img/bicycle-type-mountain-desktop@1x.jpg" alt="Горный велосипед" width="342" height="513">
-
           </div>
           <figcaption class="types__caption">Горный велосипед</figcaption>
         </figure>
         <figure class="types__item  types__item--decor-top">
           <div class="types__img-wrap">
-
             <img class="types__img" src="./img/bicycle-type-children-desktop@1x.png" alt="Детский велосипед" width="342" height="513">
           </div>
           <figcaption class="types__caption">Детский велосипед</figcaption>
         </figure>
       </div>
     </section>
+
     <section class="video" id="navvideo">
       <div class="video__head">
         <h2 class="video__title">Видео про велосипеды</h2>
@@ -128,13 +121,15 @@
       </div>
       <div class="video__inner">
         <div class="video__player">
-          <div id="player"></div>
-          <button type="button" class="video__button">Воспроизвести видео</button>
+          <div id="player">
+            <!--iframe width="560" height="315" src="https://www.youtube.com/embed/_T7NTe3uBN4"></iframe-->
+          </div>
+          <a href="https://www.youtube.com/watch?v=_T7NTe3uBN4" class="video__button" aria-role="button" aria-label="Воспроизвести видео" target="_blank"></a>
         </div>
       </div>
-
     </section>
   </main>
+
   <footer class="page-footer">
     <section class="contacts" id="navcontacts">
       <div class="contacts__head">
@@ -160,7 +155,6 @@
       </ul>
     </section>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
