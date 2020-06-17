@@ -59,9 +59,10 @@
           <form class="request-form" action="/">
             <p class="request-form__caption">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <div class="request-form__content">
-              <input type="text" placeholder="Введите Ваше Имя" required>
-              <input type="tel" placeholder="Введите Ваш номер телефона" required>
-              <button type="submit">Подобрать велосипед мечты</button>
+              <input class="request-form__field" type="text" placeholder="Введите Ваше Имя" required>
+              <p class="request-form__error-notice">Номер телефона должен содержать только цифры</p>
+              <input class="request-form__field" type="tel" placeholder="Введите Ваш номер телефона" required>
+              <button  class="request-form__button" type="submit">Подобрать велосипед мечты</button>
             </div>
           </form>
         </div>
@@ -123,7 +124,7 @@
         <div class="video__player">
           <div id="player">
           </div>
-          <a href="https://www.youtube.com/watch?v=_T7NTe3uBN4" class="video__button" aria-role="button" aria-label="Воспроизвести видео" target="_blank"></a>
+          <a href="https://www.youtube.com/watch?v=_T7NTe3uBN4" class="video__button" role="button" aria-label="Воспроизвести видео" target="_blank"></a>
         </div>
       </div>
     </section>
@@ -136,7 +137,8 @@
         <p class="contacts__info">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       </div>
       <div class="contacts__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af073451c3ba527f52c613c5ddf801b9855e22bff667486a76199847fb5688f68&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af073451c3ba527f52c613c5ddf801b9855e22bff667486a76199847fb5688f68&amp;source=constructor" title="Как нас найти?" width="500" height="200">
+        </iframe>
       </div>
       <ul class="contacts__list">
         <li class="contacts__item">

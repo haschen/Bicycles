@@ -1,6 +1,7 @@
 .video {
   position: relative;
   padding-top: 121px;
+  font-family: $fontFamyliDefault;
   background-color: $bgBlack;
   z-index: 1;
 
@@ -38,7 +39,6 @@
   width: 29%;
   min-width: 355px;
   text-align: center;
-  font-family: $fontFamyliDefault;
   color: #ffffff;
 
   @media (max-width: $tablet-max-width) {
