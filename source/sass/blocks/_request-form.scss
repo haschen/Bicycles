@@ -51,7 +51,7 @@
   letter-spacing: 0.35px;
 
   &:focus {
-    border: 2px solid $primary;
+    border: 1px solid $primary;
   }
 
   @media (max-width: $tablet-max-width) {
@@ -60,7 +60,7 @@
   }
 
   &--error {
-    border: 2px solid #ff0000;
+    border: 1px solid #ff0000;
   }
 }
 

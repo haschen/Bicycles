@@ -194,7 +194,6 @@
   }
 }
 
-
 .types__item--decor-left .types__img-wrap {
   padding-bottom: 146.5%;
 
@@ -230,27 +229,6 @@
   left: -50%;
   margin: auto;
 }
-
-.types__item--decor-left .types__img {
-  @media (max-width: $tablet-max-width) {
-    height: 120%;
-  }
-}
-
-.types__item--decor-corners .types__img {
-  @media (max-width: $tablet-max-width) {
-    height: 137%;
-  }
-}
-
-.types__item--decor-top .types__img {
-  left: -62%;
-
-  @media (max-width: $tablet-max-width) {
-    left: -50%;
-  }
-}
-
 
 .types__caption {
   margin-top: 20px;
