@@ -186,7 +186,6 @@
 .types__img-wrap {
   position: relative;
   height: 0;
-  border-radius: 10px;
   overflow: hidden;
 
   @media (max-width: $tablet-max-width) {
@@ -220,7 +219,6 @@
 
 .types__img {
   position: absolute;
-  max-width: fit-content;
   width: auto;
   height: 100%;
   top: -50%;
@@ -228,6 +226,8 @@
   right: -50%;
   left: -50%;
   margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .types__caption {
