@@ -21,7 +21,8 @@
     padding-top: 63px;
 
     &::after {
-      height: 85px;
+      height: 86px;
+      bottom: -1px;
     }
   }
 
@@ -29,7 +30,7 @@
     padding-top: 79px;
 
     &::after {
-      height: 48px;
+      height: 51px;
     }
   }
 }
@@ -58,7 +59,7 @@
   font-weight: 600;
 
   @media (max-width: $tablet-max-width) {
-    margin: 0 0 14px;
+    margin: 0 0 16px;
     font-size: 24px;
     line-height: 41px;
   }
