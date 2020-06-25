@@ -18,7 +18,7 @@
   }
 
   @media (max-width: $tablet-max-width) {
-    padding-top: 63px;
+    padding-top: 64px;
 
     &::after {
       height: 86px;
@@ -93,13 +93,13 @@
 
   @media (max-width: $tablet-max-width) {
     width: 65.495%;
-    margin: 40px auto 0;
+    margin: 39px auto 0;
     padding-bottom: 36.72%;
   }
 
   @media (max-width: $mobile-max-width) {
     width: 90%;
-    margin: 54px auto 0;
+    margin: 52px auto 0;
     padding-bottom: 50.315%;
   }
 }
@@ -116,7 +116,7 @@
   position: absolute;
   height: 57px;
   width: 57px;
-  top: 50%;
+  top: 50.25%;
   right: 50%;
   transform: translate(50%, -50%);
   font-size: 0;
@@ -132,7 +132,7 @@
     display: block;
     height: 0;
     width: 20px;
-    top: 32%;
+    top: 34%;
     right: 0;
     border: 9px solid transparent;
     border-left: 13px solid #000000;

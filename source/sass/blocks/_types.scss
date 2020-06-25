@@ -5,11 +5,11 @@
   background-color: $bgGrey;
 
   @media (max-width: $tablet-max-width) {
-    padding: 50px 0 22px;
+    padding: 50px 0 21px;
   }
 
   @media (max-width: $mobile-max-width) {
-    padding: 50px 0 10px;
+    padding: 51px 0 10px;
   }
 }
 
@@ -23,7 +23,7 @@
   @media (max-width: $tablet-max-width) {
     font-size: 24px;
     line-height: 41px;
-    margin: 0 0 29px;
+    margin: 0 0 30px;
   }
 }
 
@@ -87,8 +87,8 @@
 
   @media (max-width: $mobile-max-width) {
     &::before {
-      left: -8%;
-      top: 56.5%;
+      left: -8.4%;
+      top: 56.9%;
       height: 25.766%;
       width: 33.46%;
     }

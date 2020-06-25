@@ -54,32 +54,56 @@
 
   //форма
   var form = document.querySelector(".request-form");
-  var telInput = document.querySelector("input[type=\"tel\"]")
+  var telInput = document.querySelector("input[type=\"tel\"]");
   var errorMsg = document.querySelector(".request-form__error-notice");
-  var errorStatus = -1;
+
+  var telValidation = function() {
+    var errorStatus = -1;
+
+    if (telInput.value.search((/[^\+?\d]/g)) === -1) {
+      errorStatus = 1;
+    }
+    return errorStatus;
+
+  };
+
+  var showValidErrorMsg = function () {
+
+    telInput.classList.add("request-form__field--error");
+    errorMsg.classList.add("request-form__error-notice--visible");
+
+  }
+
+  var sendData = function () {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://echo.htmlacademy.ru");
+    request.send(new FormData(form));
+
+    request.onload = request.onerror = function() {
+      if (this.status == 200) {
+        alert( "Ваша заявка принята!" );
+      } else {
+        alert( "Произошла ошибка при загрузке данных. Пожалуйста, обновите страницу!" );
+      }
+    };
+
+  }
+
+
+  telInput.addEventListener("keyup", function(){
+    if (telInput.classList.contains("request-form__field--error")) {
+      telInput.classList.remove("request-form__field--error");
+      errorMsg.classList.remove("request-form__error-notice--visible");
+    }
+  });
+
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (telInput.value.search(/[^\d]/g) === -1) {
-      console.log(telInput.value.search(/[\d]/));
-      var request = new XMLHttpRequest();
-      request.open("POST", "/");
-      request.send(new FormData(this));
-    } else {
-      telInput.classList.add("request-form__field--error");
-      errorMsg.classList.add("request-form__error-notice--visible");
-      errorStatus = 1;
-    }
-
+    console.log(telValidation());
+    (telValidation() === 1) ? sendData() : showValidErrorMsg();
   });
 
-  telInput.addEventListener("keyup", function(){
-    if (errorStatus > -1) {
-      telInput.classList.remove("request-form__field--error");
-      errorMsg.classList.remove("request-form__error-notice--visible");
-      errorStatus = -1;
-    }
-  });
 
   //видео
   var createYTPlayer = function(){

@@ -12,6 +12,7 @@
 
   @media (max-width: $mobile-max-width) {
     padding-bottom: 79px;
+    padding-top: 76px;
   }
 }
 
@@ -25,10 +26,6 @@
   @media (max-width: $tablet-max-width) {
     font-size: 24px;
     margin-bottom: 35px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    margin-bottom: 33px;
   }
 }
 
@@ -67,7 +64,17 @@
 
   @media (max-width: $mobile-max-width) {
     flex-basis: 100%;
-    margin: 0 0 48px;
+    margin: 0 0 56px;
+  }
+}
+
+.about__item--first {
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 30px;
+
+    .about__text {
+      margin-top: 21px;
+    }
   }
 }
 
@@ -88,6 +95,7 @@
   @media (max-width: $mobile-max-width) {
     font-family: $fontFamyliOption;
     font-size: 18px;
-    margin: 14px 0 0;
+    margin: 12px 0 0;
+    letter-spacing: 0;
   }
 }
